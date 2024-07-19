@@ -1,0 +1,43 @@
+meta {
+  name: Create Device
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{base_url}}/static-data/v1/devices
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "lifecycleStatus": "Live",
+    "timezone": "Europe/London",
+    "type": "Electric Vehicle",
+    "energyCapacity": 3300,
+    "maxImport": 7000,
+    "customerType": "Domestic",
+    "integrationType": "MyEnergi",
+    "locationId": "UK",
+    "maxExport": 7000,
+    "model": "EV: Some Model, Charge Point: MyEnergi",
+    "displayOnConsole": false,
+    "id": "00000000-d002-4300-8000-12345abcdef0",
+    "cycleLimit": 1,
+    "authType": "none",
+    "make": "EV: Tesla, Charge Point: Wallbox",
+    "efficiency": 0.9,
+    "simulator": false,
+    "version": 0,
+    "size": 7000,
+    "name": "Wings Kookaburras Test Device 12345abcdef0",
+    "integration": "Cloud 2 Cloud",
+    "siteId": "upside/upside-domestic-wings-kookaburra",
+    "category": "Physical"
+  }
+}
