@@ -1,0 +1,29 @@
+meta {
+  name: Set Device Connection Details
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{base_url}}/v1/devices/{{deviceId}}/connection-details
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "connectionType": "{{connectionType}}",
+    "details": {
+      "integrationDeviceId": "{{deviceId}}",
+      "accessToken": "accesstoken",
+      "refreshToken": "refreshtoken",
+      "accountLocations": {
+        "home": {
+          "latitude": 54.106484,
+          "longitude": -3.234012
+        }
+      }
+    },
+    "expiresAt": "2024-04-16T17:05:00Z"
+  }
+}

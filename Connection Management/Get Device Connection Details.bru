@@ -1,0 +1,16 @@
+meta {
+  name: Get Device Connection Details
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{base_url}}/v1/devices/connection-details/device-id?integrationDeviceId={{deviceId}}&connectionType={{connectionType}}
+  body: none
+  auth: none
+}
+
+params:query {
+  integrationDeviceId: {{deviceId}}
+  connectionType: {{connectionType}}
+}

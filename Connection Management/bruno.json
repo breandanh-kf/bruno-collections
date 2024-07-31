@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Connection Management",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
