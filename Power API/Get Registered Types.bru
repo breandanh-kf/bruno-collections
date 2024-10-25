@@ -1,0 +1,15 @@
+meta {
+  name: Get Registered Types
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{base_url}}/v2/types/upside?subjectIds=00000000-d002-4300-8000-12345abcdef0
+  body: none
+  auth: none
+}
+
+params:query {
+  subjectIds: 00000000-d002-4300-8000-12345abcdef0
+}

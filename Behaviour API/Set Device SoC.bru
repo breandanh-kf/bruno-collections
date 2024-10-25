@@ -1,0 +1,20 @@
+meta {
+  name: Set Device SoC
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{base_url}}/ev/soc/{{deviceId}}?soc=0.75
+  body: none
+  auth: none
+}
+
+params:query {
+  soc: 0.75
+}
+
+headers {
+  x-api-key: {{api_key}}
+  Authorization: Bearer {{token}}
+}

@@ -1,0 +1,105 @@
+meta {
+  name: Get All Power Values
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{base_url}}/v2/powers/upside?subjectIds=00000000-d002-4300-8000-12345abcdef0&begin=2024-01-01T09:00:00Z&end=2024-10-24T00:00:00Z&types=dispatch&types=PN&types=boa&types=highResMel&types=highResMil&types=highresmel&types=highresmil&types=mel&types=melpower&types=mil&types=milpower&types=pn&types=sentMel&types=sentMil&types=sentPn&types=sentmel&types=sentmil&types=sentpn&types=baseline&types=reserved-power-export&types=reserved-power-import&types=reserve-power-import&types=boavolume&types=generationforecast&types=pn-dispatch&types=proposed&types=gb-balancing-reserve-export&types=gb-balancing-reserve-import&types=gb-quick-reserve-export&types=gb-quick-reserve-import&types=gb-mfr-low&types=joanna-deskcheck&types=joanna-test&types=joanna-test-2&types=joanna-testing&types=matt-t-test&types=matt-t-test-2&types=test-jb-local&types=test-joanna&types=test-joanna-fail&types=joanna-test-toykogas&types=traded-position&types=traded-position-intra-day&types=loadforecast&types=forecast-soc&types=forecast-soe&types=max-dispatchable-export&types=max-dispatchable-import&types=trading-optimisation-un-rounded-pn&types=contracted-contingency-fcas-lower1Sec&types=contracted-contingency-fcas-lower5Min&types=contracted-contingency-fcas-lower60Sec&types=contracted-contingency-fcas-lower6Sec&types=contracted-contingency-fcas-raise1Sec&types=contracted-contingency-fcas-raise5Min&types=contracted-contingency-fcas-raise60Sec&types=contracted-contingency-fcas-raise6Sec&types=forecasted-bid-offer-contingency-fcas-lower1Sec&types=forecasted-bid-offer-contingency-fcas-lower5Min&types=forecasted-bid-offer-contingency-fcas-lower60Sec&types=forecasted-bid-offer-contingency-fcas-lower6Sec&types=forecasted-bid-offer-contingency-fcas-raise1Sec&types=forecasted-bid-offer-contingency-fcas-raise5Min&types=forecasted-bid-offer-contingency-fcas-raise60Sec&types=forecasted-bid-offer-contingency-fcas-raise6Sec&types=undefined&types=auxloadforecast&types=meaganalikitest&types=traded-position-cash-out-truncated&types=elena-aliki-test&types=joanna-test-tokyogas&types=joanna-test-tokyogas-2&types=joanna-test-tokyogas-3&types=roseanna-test&types=traded-position-gas&types=traded-position-cash-out&types=something-else&types=dispatch-joanna&types=dispatches&types=a-random-schedule-type&types=SCHEDULE-TYPE&types=lower-schedule-type&types=schedule-type&types=upper-schedule-type&types=traded-position-gas-truncated&types=mike-test-type&types=traded-position-day-ahead&types=test-power-type-1
+  body: none
+  auth: none
+}
+
+params:query {
+  subjectIds: 00000000-d002-4300-8000-12345abcdef0
+  begin: 2024-01-01T09:00:00Z
+  end: 2024-10-24T00:00:00Z
+  types: dispatch
+  types: PN
+  types: boa
+  types: highResMel
+  types: highResMil
+  types: highresmel
+  types: highresmil
+  types: mel
+  types: melpower
+  types: mil
+  types: milpower
+  types: pn
+  types: sentMel
+  types: sentMil
+  types: sentPn
+  types: sentmel
+  types: sentmil
+  types: sentpn
+  types: baseline
+  types: reserved-power-export
+  types: reserved-power-import
+  types: reserve-power-import
+  types: boavolume
+  types: generationforecast
+  types: pn-dispatch
+  types: proposed
+  types: gb-balancing-reserve-export
+  types: gb-balancing-reserve-import
+  types: gb-quick-reserve-export
+  types: gb-quick-reserve-import
+  types: gb-mfr-low
+  types: joanna-deskcheck
+  types: joanna-test
+  types: joanna-test-2
+  types: joanna-testing
+  types: matt-t-test
+  types: matt-t-test-2
+  types: test-jb-local
+  types: test-joanna
+  types: test-joanna-fail
+  types: joanna-test-toykogas
+  types: traded-position
+  types: traded-position-intra-day
+  types: loadforecast
+  types: forecast-soc
+  types: forecast-soe
+  types: max-dispatchable-export
+  types: max-dispatchable-import
+  types: trading-optimisation-un-rounded-pn
+  types: contracted-contingency-fcas-lower1Sec
+  types: contracted-contingency-fcas-lower5Min
+  types: contracted-contingency-fcas-lower60Sec
+  types: contracted-contingency-fcas-lower6Sec
+  types: contracted-contingency-fcas-raise1Sec
+  types: contracted-contingency-fcas-raise5Min
+  types: contracted-contingency-fcas-raise60Sec
+  types: contracted-contingency-fcas-raise6Sec
+  types: forecasted-bid-offer-contingency-fcas-lower1Sec
+  types: forecasted-bid-offer-contingency-fcas-lower5Min
+  types: forecasted-bid-offer-contingency-fcas-lower60Sec
+  types: forecasted-bid-offer-contingency-fcas-lower6Sec
+  types: forecasted-bid-offer-contingency-fcas-raise1Sec
+  types: forecasted-bid-offer-contingency-fcas-raise5Min
+  types: forecasted-bid-offer-contingency-fcas-raise60Sec
+  types: forecasted-bid-offer-contingency-fcas-raise6Sec
+  types: undefined
+  types: auxloadforecast
+  types: meaganalikitest
+  types: traded-position-cash-out-truncated
+  types: elena-aliki-test
+  types: joanna-test-tokyogas
+  types: joanna-test-tokyogas-2
+  types: joanna-test-tokyogas-3
+  types: roseanna-test
+  types: traded-position-gas
+  types: traded-position-cash-out
+  types: something-else
+  types: dispatch-joanna
+  types: dispatches
+  types: a-random-schedule-type
+  types: SCHEDULE-TYPE
+  types: lower-schedule-type
+  types: schedule-type
+  types: upper-schedule-type
+  types: traded-position-gas-truncated
+  types: mike-test-type
+  types: traded-position-day-ahead
+  types: test-power-type-1
+}

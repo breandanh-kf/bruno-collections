@@ -1,0 +1,21 @@
+meta {
+  name: Connect Device
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{base_url}}/ev/connect/{{deviceId}}?connected=true&shouldCharge=false
+  body: none
+  auth: none
+}
+
+params:query {
+  connected: true
+  shouldCharge: false
+}
+
+headers {
+  x-api-key: {{api_key}}
+  Authorization: Bearer {{token}}
+}

@@ -1,0 +1,18 @@
+meta {
+  name: Get Power Values
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{base_url}}/v2/powers/upside?subjectIds=00000000-d002-4300-8000-12345abcdef0&begin=2024-10-01T09:08:00Z&end=2024-10-01T09:08:00.001Z&types=dispatch
+  body: none
+  auth: none
+}
+
+params:query {
+  subjectIds: 00000000-d002-4300-8000-12345abcdef0
+  begin: 2024-10-01T09:08:00Z
+  end: 2024-10-01T09:08:00.001Z
+  types: dispatch
+}

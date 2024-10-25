@@ -1,0 +1,16 @@
+meta {
+  name: Get Device
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{base_url}}/ev/{{deviceId}}
+  body: none
+  auth: none
+}
+
+headers {
+  x-api-key: {{api_key}}
+  Authorization: Bearer {{token}}
+}

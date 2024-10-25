@@ -1,0 +1,78 @@
+meta {
+  name: Set Subject Powers
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{base_url}}/v2/powers/upside
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "begin": "2024-10-01T09:00:00Z",
+    "end": "2024-10-14T00:00:00Z",
+    "powers": {
+      "00000000-d002-4300-8000-12345abcdef0": {
+        "dispatch": [
+          {
+            "begin": "2024-10-01T09:00:00Z",
+            "end": "2024-10-01T09:10:00Z",
+            "beginPower": -0,
+            "endPower": -0,
+            "extraProperties": {
+              "targetSoC": "0.8"
+            }
+          },
+          {
+            "begin": "2024-10-01T09:10:00Z",
+            "end": "2024-10-01T09:20:00Z",
+            "beginPower": -10,
+            "endPower": -10,
+            "extraProperties": {
+              "targetSoC": "0.8"
+            }
+          },
+          {
+            "begin": "2024-10-01T09:20:00Z",
+            "end": "2024-10-01T09:30:00Z",
+            "beginPower": 20,
+            "endPower": 30,
+            "extraProperties": {
+              "targetSoC": "0.8"
+            }
+          },
+          {
+            "begin": "2024-10-01T09:30:00Z",
+            "end": "2024-10-01T09:40:00Z",
+            "beginPower": -20,
+            "endPower": -20,
+            "extraProperties": {
+              "targetSoC": "0.8"
+            }
+          },
+          {
+            "begin": "2024-10-01T09:40:00Z",
+            "end": "2024-10-01T09:50:00Z",
+            "beginPower": -30,
+            "endPower": -30,
+            "extraProperties": {
+              "targetSoC": "0.8"
+            }
+          },
+          {
+            "begin": "2024-10-01T09:50:00Z",
+            "end": "2024-10-01T10:00:00Z",
+            "beginPower": -40,
+            "endPower": -40,
+            "extraProperties": {
+              "targetSoC": "0.8"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+meta {
+  name: Get Device Status
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{base_url}}/devices/{{deviceId}}/status
+  body: none
+  auth: none
+}
